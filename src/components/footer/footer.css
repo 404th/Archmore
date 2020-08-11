@@ -1,0 +1,110 @@
+
+.footer_container {
+  width: 100%;
+  height: 551px;
+  box-sizing: border-box;
+  padding: 24px;
+  margin: 0;
+}
+
+.footer_container_cover {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+/* footer_navigator_cover_child1 */
+.footer_container_cover_child1 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  width: 100%;
+  height: 343px;
+}
+
+.footer_container_cover_child1 .partners {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  border-bottom: 1px solid rgba( 0, 0, 0, .2 ) ;
+}
+
+.footer_container_cover_child1 .partners div {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  padding: 40px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer_container_cover_child1 .word {
+  width: 100%;
+  height: 100%;
+}
+
+.footer_container_cover_child1 .word span {
+  font-family: 'NY' , sans-serifs ;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 124%;
+}
+
+
+/* footer_container_cover_child2 */
+.footer_container_cover_child2 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 100%;
+  height: 208px;
+  padding: 80px;
+  box-sizing: border-box;
+}
+
+.footer_container_cover_child2 .footer_navigator {
+  width: 40%;
+	height: 100%;
+	padding: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.footer_container_cover_child2 .footer_navigator a {
+  box-sizing: border-box;
+  width: 20%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  color: rgba( 0, 0, 0, .6 ) ;
+  font-family: SF UI Display;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 40px;
+  text-decoration: none;
+  letter-spacing: 0.01em;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer_logo {
+	width: 60%;
+	height: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.footer_logo a {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  float: right;
+}
