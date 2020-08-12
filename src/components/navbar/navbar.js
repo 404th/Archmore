@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 const Navbar = () => {
 
   return (
-    <div className={`container`}>
+    <div className={`container`} style={{ zIndex: '1' }} >
       <div className={"container_first"}>
         <div className={`container_first_child`} >
           <div className={"container_first_child_logo"}>
@@ -19,7 +19,7 @@ const Navbar = () => {
             </Link>
           </div>
           <div className={"container_second_child_navgation"}>
-            <Link to="#">
+            <Link to="/gallery">
               <span>Design Gallery</span>
             </Link>
             <Link to="#">
