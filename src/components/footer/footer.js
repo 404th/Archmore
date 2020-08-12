@@ -12,33 +12,33 @@ const Footer = () => {
           </div>
           <div className="partners">
             <div>
-              <img src="./images/img/footer/logo-1.svg" width="100%" heigh="100%" />
+              <img src="./images/img/footer/logo-1.svg" width="100%" heigh="100%" alt='partner1' />
             </div>
             <div>
-              <img src="./images/img/footer/logo-2.svg" width="100%" heigh="100%" />
+              <img src="./images/img/footer/logo-2.svg" width="100%" heigh="100%" alt='partner2' />
             </div>
             <div>
-              <img src="./images/img/footer/logo-3.svg" width="100%" heigh="100%" />
+              <img src="./images/img/footer/logo-3.svg" width="100%" heigh="100%" alt='partner3' />
             </div>
             <div>
-              <img src="./images/img/footer/logo-4.svg" width="100%" heigh="100%" />
+              <img src="./images/img/footer/logo-4.svg" width="100%" heigh="100%" alt='partner4' />
             </div>
             <div>
-              <img src="./images/img/footer/logo-5.svg" width="100%" heigh="100%" />
+              <img src="./images/img/footer/logo-5.svg" width="100%" heigh="100%" alt='partner5' />
             </div>
           </div>
         </div>
         <div className="footer_container_cover_child2">
           <div className="footer_navigator">
-            <Link>About us</Link>
-            <Link>How it works</Link>
-            <Link>FAQ</Link>
-            <Link>Contact us</Link>
-            <Link>Privacy Police</Link>
+            <Link to={'/#'} >About us</Link>
+            <Link to={'/#'} >How it works</Link>
+            <Link to={'/#'} >FAQ</Link>
+            <Link to={'/#'} >Contact us</Link>
+            <Link to={'/#'} >Privacy Police</Link>
           </div>
           <div className="footer_logo">
-            <Link>
-              <img src="./images/img/footer/1.svg" />
+            <Link to={'/'} >
+              <img src="./images/img/footer/1.svg" alt='logo' />
             </Link>
           </div>
         </div>

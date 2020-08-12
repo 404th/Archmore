@@ -1,18 +1,11 @@
-import React, { useState } from 'react'
+import React from 'react'
 import './navbar-style.css'
 import { Link } from 'react-router-dom'
 
 const Navbar = () => {
 
-  let [ balandlik, setBalandlik ] = useState(false)
-
-  window.addEventListener( 'scroll' , e => {
-    console.log( document.getElementById('root') )
-    e ? setBalandlik(true) : setBalandlik(false)
-  } )
-
   return (
-    <div className={`container ${ balandlik ? 'shadow' :  null } `}>
+    <div className={`container`}>
       <div className={"container_first"}>
         <div className={`container_first_child`} >
           <div className={"container_first_child_logo"}>
@@ -26,16 +19,16 @@ const Navbar = () => {
             </Link>
           </div>
           <div className={"container_second_child_navgation"}>
-            <Link href="#">
+            <Link to="#">
               <span>Design Gallery</span>
             </Link>
-            <Link href="#">
+            <Link to="#">
               <span>List of Architect</span>
             </Link>
-            <Link href="#">
+            <Link to="#">
               <span>Articles</span>
             </Link>
-            <Link href="#">
+            <Link to="#">
               <span>How it works</span>
             </Link>
           </div>

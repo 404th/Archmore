@@ -6,6 +6,7 @@
   flex-wrap: nowrap;
   position: sticky;
   top: 0;
+  background-color: #fff;
 }
 
 .shadow {
