@@ -1,16 +1,22 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import SliderItem from './SliderItem'
+import { connect } from 'react-redux'
+import { bindActionCreators } from 'redux'
+import { setSliderImgs } from '../../../actions'
+
 const Slider = props => {
+
+  console.log( 'Slider props:' + props );
+
+  useEffect( () => {
+    props.setSliderImgs()
+  },[] )
 
   return(
     <div style={{ zIndex: '-1' }} >
       <div uk-slider='true' >
         <ul className="uk-slider-items uk-child-width-1-4@s uk-child-width-1-4@m uk-grid">
           <SliderItem />
-          {/* <li>
-            <img src="./images/img/gallery/img-01.svg" width="100%" height="100%" alt="home-1" />
-          </li>
-           */}
         </ul>
 
         <div className="uk-visible@s nav_covers">
@@ -29,7 +35,20 @@ const Slider = props => {
       </div>
     </div>
   )
-
 }
 
-export default Slider
+const mapStateToProps = state => {
+  console.log( 'mapState:' + state ); 
+  return {
+    imgs: ''
+  }
+}
+
+const mapDispatchToProps = dispatch => {
+  return bindActionCreators({
+    setSliderImgs
+  }, dispatch)
+}
+
+
+export default connect(mapStateToProps, mapDispatchToProps)( Slider )
