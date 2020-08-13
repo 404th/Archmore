@@ -12,19 +12,19 @@ const Footer = () => {
           </div>
           <div className="partners">
             <div>
-              <img src="./images/img/footer/logo-1.svg" width="100%" heigh="100%" alt='partner1' />
+              <img src="./images/img/footer/logo-1.svg" width="100%" height="100%" alt='partner1' />
             </div>
             <div>
-              <img src="./images/img/footer/logo-2.svg" width="100%" heigh="100%" alt='partner2' />
+              <img src="./images/img/footer/logo-2.svg" width="100%" height="100%" alt='partner2' />
             </div>
             <div>
-              <img src="./images/img/footer/logo-3.svg" width="100%" heigh="100%" alt='partner3' />
+              <img src="./images/img/footer/logo-3.svg" width="100%" height="100%" alt='partner3' />
             </div>
             <div>
-              <img src="./images/img/footer/logo-4.svg" width="100%" heigh="100%" alt='partner4' />
+              <img src="./images/img/footer/logo-4.svg" width="100%" height="100%" alt='partner4' />
             </div>
             <div>
-              <img src="./images/img/footer/logo-5.svg" width="100%" heigh="100%" alt='partner5' />
+              <img src="./images/img/footer/logo-5.svg" width="100%" height="100%" alt='partner5' />
             </div>
           </div>
         </div>
