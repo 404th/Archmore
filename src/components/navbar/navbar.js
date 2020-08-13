@@ -1,6 +1,6 @@
 import React from 'react'
 import './navbar-style.css'
-import { Link } from 'react-router-dom'
+import NavLinkk from './widget/Link'
 
 const Navbar = () => {
 
@@ -9,28 +9,20 @@ const Navbar = () => {
       <div className={"container_first"}>
         <div className={`container_first_child`} >
           <div className={"container_first_child_logo"}>
-            <Link to={"/"}>
-              <img
-                src={"./images/img/navbar/1.svg"}
-                alt="site-logo"
-                width={60.57}
-                height={28}
-              />
-            </Link>
+            <NavLinkk way={'/'} item={'img'} tools={
+              { src: "./images/img/navbar/1.svg",
+                alt: "site-logo",
+                width: 60.57,
+                height:28
+              }} />
           </div>
           <div className={"container_second_child_navgation"}>
-            <Link to="/gallery">
-              <span>Design Gallery</span>
-            </Link>
-            <Link to="#">
-              <span>List of Architect</span>
-            </Link>
-            <Link to="#">
-              <span>Articles</span>
-            </Link>
-            <Link to="#">
-              <span>How it works</span>
-            </Link>
+
+            <NavLinkk way={'/gallery'} title={'Gallery'} item={'span'} />
+            <NavLinkk way={'#'} title={'List of Architect'} item={'span'} />
+            <NavLinkk way={'#'} title={'Articles'} item={'span'} />
+            <NavLinkk way={'#'} title={'How it works'} item={'span'} />
+            
           </div>
         </div>
       </div>
