@@ -1,6 +1,9 @@
 import React from 'react'
 import './navbar-style.css'
 import NavLinkk from './widget/Link'
+import SignIn from './widget/SignIn'
+import SignUp from './widget/SignUp'
+import Search from './widget/Search'
 
 const Navbar = () => {
 
@@ -28,20 +31,18 @@ const Navbar = () => {
       </div>
       <div className={`container_second`}>
         <div className={`container_second_child`}>
-          <div className={"container_second_child_lupa"}>
-            <img
-              src={"./images/img/navbar/search.svg"}
-              alt={"search"}
-              width={16}
-              height={16}
-            />
-          </div>
-          <div className={"container_second_child_signIn"}>
-            <span> Sign in </span>
-          </div>
-          <div className={"container_second_child_signUp"}>
-            <span> Sign up </span>
-          </div>
+          <Search
+            className={"container_second_child_lupa"}
+              tools={{ src:"./images/img/navbar/search.svg",
+              alt:'Loopa',
+              width: 16,
+              height: 16
+            }}
+            item="img"
+          />
+          <SignIn className={"container_second_child_signIn"} title="Sign in" />
+          <SignUp className={"container_second_child_signUp"} title="Sign up" />
+          
         </div>
       </div>
     </div>
