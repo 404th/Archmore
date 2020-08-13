@@ -1,54 +1,45 @@
 import React, { useEffect } from 'react'
 import SliderItem from './SliderItem'
 import { connect } from 'react-redux'
-import { bindActionCreators } from 'redux'
 import { setSliderImgs } from '../../../actions'
+import SliderNav from './SliderNav'
 
 const Slider = props => {
-
-  console.log( 'Slider props:' + props );
-
   useEffect( () => {
-    props.setSliderImgs()
+    props.getSliderImgs()
   },[] )
 
   return(
     <div style={{ zIndex: '-1' }} >
       <div uk-slider='true' >
         <ul className="uk-slider-items uk-child-width-1-4@s uk-child-width-1-4@m uk-grid">
-          <SliderItem />
+          { props.imgs ? props.imgs.map( (item, i) => {
+            return <SliderItem {...item} key={i} />
+          } ) : null }
         </ul>
+        { props.imgs && props.imgs.length > 4 ?
+            <SliderNav />
+        : null
+        }
 
-        <div className="uk-visible@s nav_covers">
-          <div className="previous">
-            <a href="#" uk-slidenav-previous='true' uk-slider-item="previous">
-              <img src="./images/img/gallery/dashicons_arrow-left-alt.svg" width="20px" alt='left' />
-            </a>
-          </div>
-          <div className="next" >
-            <a href="#" uk-slidenav-next='true' uk-slider-item="next">
-              <img src="./images/img/gallery/dashicons_arrow-right-alt.svg" width="20px" alt='right' />
-            </a>
-          </div>
-
-        </div>
       </div>
     </div>
   )
 }
 
 const mapStateToProps = state => {
-  console.log( 'mapState:' + state ); 
   return {
-    imgs: ''
+    imgs: state.Slider_reducer.data
   }
 }
 
 const mapDispatchToProps = dispatch => {
-  return bindActionCreators({
-    setSliderImgs
-  }, dispatch)
+  return {
+    getSliderImgs: () => {
+      dispatch( setSliderImgs() )
+    }
+  }
 }
 
 
-export default connect(mapStateToProps, mapDispatchToProps)( Slider )
+export default connect(mapStateToProps, mapDispatchToProps )( Slider )

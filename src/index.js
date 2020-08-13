@@ -9,10 +9,10 @@ import combiner from './components/reducers/Combiner'
 const createStoreByMiddleware = applyMiddleware()( createStore )
 
 ReactDOM.render(
-  <React.StrictMode>
     <Provider store={createStoreByMiddleware( combiner )}>
-      <App />
-    </Provider>
-  </React.StrictMode>,
+      <React.StrictMode>
+        <App />
+      </React.StrictMode>
+    </Provider>,
   document.getElementById('root')
 )

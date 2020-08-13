@@ -1,10 +1,9 @@
 
 
 function sliderInfo( state={}, action ){
-  console.log( 'actiondan => ' + action )
-  switch( action.type.info ){
+  switch( action.type ){
     case('img'):
-     return state = { ...state, images:action.info }
+      return state = { ...state, data:action.info }
     default:
       return state
   }
