@@ -92,6 +92,7 @@
   text-decoration: none;
   letter-spacing: 0.01em;
   text-align: center;
+  user-select: none;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -106,6 +107,7 @@
 	height: 100%;
 	padding: 20px;
   display: flex;
+  user-select: none;
   flex-direction: row-reverse;
 }
 
