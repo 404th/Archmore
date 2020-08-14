@@ -1,13 +1,12 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import SliderItem from './SliderItem'
 import { connect } from 'react-redux'
 import { setSliderImgs } from '../../../actions'
 import SliderNav from './SliderNav'
 
 const Slider = props => {
-  useEffect( () => {
-    props.getSliderImgs()
-  },[] )
+  
+  setTimeout( () => props.getSliderImgs(), 0.000001)
 
   return(
     <div style={{ zIndex: '-1' }} >

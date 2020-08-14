@@ -25,4 +25,16 @@ export function setPartners(){
     ]
   }
 }
+export function setFootLink(){
+  return {
+    type:'footerNav',
+    info:[
+      { to: '/#', title:'About us' },
+      { to: '/#', title:'How it works' },
+      { to: '/#', title:'FAQ' },
+      { to: '/#', title:'Contact us' },
+      { to: '/#', title:'Privacy Police' }
+    ]
+  }
+}
 

@@ -4,12 +4,15 @@ import { Link } from 'react-router-dom'
 import Partners from './widget/partners'
 import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
-import { setPartners } from '../actions'
+import { setPartners, setFootLink } from '../actions'
+import FNav from './widget/navlinks'
 
 const Footer = props => {
-  useEffect( () => {
+  useEffect(() => {
     props.setPartners()
-  }, [] )
+    props.setFootLink()
+  }, [])
+
   return (
     <div className="footer_container">
       <div className="footer_container_cover">
@@ -20,13 +23,7 @@ const Footer = props => {
           <Partners partners={props.partners} />
         </div>
         <div className="footer_container_cover_child2">
-          <div className="footer_navigator">
-            <Link to={'/#'} >About us</Link>
-            <Link to={'/#'} >How it works</Link>
-            <Link to={'/#'} >FAQ</Link>
-            <Link to={'/#'} >Contact us</Link>
-            <Link to={'/#'} >Privacy Police</Link>
-          </div>
+          <FNav nav={ props.footerNav } />
           <div className="footer_logo">
             <Link to={'/'} >
               <img src="./images/img/footer/1.svg" alt='logo' />
@@ -40,13 +37,15 @@ const Footer = props => {
 
 const mapStateToProps = state => {
   return {
-    partners: state.Slider_reducer.partners
+    partners: state.Slider_reducer.partners,
+    footerNav: state.Slider_reducer.footerNav,
   }
 }
 
 const mapDispatchToProps = dispatch => {
   return bindActionCreators({
-    setPartners
+    setPartners,
+    setFootLink
   }, dispatch)
 }
 
