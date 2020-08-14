@@ -53,6 +53,7 @@
   font-weight: bold;
   font-size: 48px;
   line-height: 124%;
+  user-select: none;
 }
 
 
@@ -94,6 +95,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.footer_container_cover_child2 .footer_navigator a:hover {
+  color: black;
 }
 
 .footer_logo {
