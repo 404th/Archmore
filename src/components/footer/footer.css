@@ -39,6 +39,7 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  user-select: none;
 }
 
 .footer_container_cover_child1 .word {

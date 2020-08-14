@@ -18,7 +18,7 @@ const Slider = props => {
           } ) : null }
         </ul>
         { props.imgs && props.imgs.length > 4 ?
-            <SliderNav />
+          <SliderNav />
         : null
         }
 

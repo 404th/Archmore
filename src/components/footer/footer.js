@@ -1,8 +1,15 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './footer.css'
 import { Link } from 'react-router-dom'
+import Partners from './widget/partners'
+import { connect } from 'react-redux'
+import { bindActionCreators } from 'redux'
+import { setPartners } from '../actions'
 
-const Footer = () => {
+const Footer = props => {
+  useEffect( () => {
+    props.setPartners()
+  }, [] )
   return (
     <div className="footer_container">
       <div className="footer_container_cover">
@@ -10,23 +17,7 @@ const Footer = () => {
           <div className="word">
             <span>Our partners</span>
           </div>
-          <div className="partners">
-            <div>
-              <img src="./images/img/footer/logo-1.svg" width="100%" height="100%" alt='partner1' />
-            </div>
-            <div>
-              <img src="./images/img/footer/logo-2.svg" width="100%" height="100%" alt='partner2' />
-            </div>
-            <div>
-              <img src="./images/img/footer/logo-3.svg" width="100%" height="100%" alt='partner3' />
-            </div>
-            <div>
-              <img src="./images/img/footer/logo-4.svg" width="100%" height="100%" alt='partner4' />
-            </div>
-            <div>
-              <img src="./images/img/footer/logo-5.svg" width="100%" height="100%" alt='partner5' />
-            </div>
-          </div>
+          <Partners partners={props.partners} />
         </div>
         <div className="footer_container_cover_child2">
           <div className="footer_navigator">
@@ -47,4 +38,16 @@ const Footer = () => {
   )
 }
 
-export default Footer
+const mapStateToProps = state => {
+  return {
+    partners: state.Slider_reducer.partners
+  }
+}
+
+const mapDispatchToProps = dispatch => {
+  return bindActionCreators({
+    setPartners
+  }, dispatch)
+}
+
+export default connect(mapStateToProps, mapDispatchToProps )( Footer )
