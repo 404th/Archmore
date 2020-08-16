@@ -1,12 +1,13 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 
-const SignUn = props => {
+const SignUp = props => {
 
   return (
-    <div {...props}>
+    <NavLink {...props}>
       <span> {props.title} </span>
-    </div>
+    </NavLink>
   )
 }
 
-export default SignUn
+export default SignUp

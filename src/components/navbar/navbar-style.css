@@ -100,27 +100,42 @@
 
 .container_second_child_signIn {
   order: 1;
+  color: lightcoral;
 }
 
 .container_second_child_signIn:hover {
   background-color: rgba(206, 206, 207, 0.911);
+  user-select: none;
+  text-decoration: none;
+  color: #fff;
 }
 
 .container_second_child_signIn:active {
   background-color: rgba(255, 255, 255, 0.562);
 }
 
+.container_second_child_signIn a span {
+  user-select: none;
+  text-decoration: none;
+}
+
 /* SIGN UP */
 .container_second_child_signUp {
   background-color: lightcoral;
+  color: #fff;
 }
 
-.container_second_child_signUp span {
+.container_second_child_signUp a span {
   color: white;
+  user-select: none;
+  text-decoration: none;
 }
 
 .container_second_child_signUp:hover {
     background-color: rgb(250, 51, 81);
+    user-select: none;
+    text-decoration: none;
+    color: #fff;
 }
 
 

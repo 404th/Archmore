@@ -1,11 +1,12 @@
 import React from 'react'
+import {NavLink} from 'react-router-dom'
 
 const SignIn = props => {
 
   return(
-    <div { ...props }>
+    <NavLink { ...props }>
       <span> { props.title } </span>
-    </div>
+    </NavLink>
   )
 }
 

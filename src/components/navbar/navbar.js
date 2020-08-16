@@ -40,8 +40,8 @@ const Navbar = () => {
             }}
             item="img"
           />
-          <SignIn className={"container_second_child_signIn"} title="Sign in" />
-          <SignUp className={"container_second_child_signUp"} title="Sign up" />
+          <SignIn className={"container_second_child_signIn"} to={'/signIn'} title="Sign in" />
+          <SignUp className={"container_second_child_signUp"} to={'/signUp'} title="Sign up" />
           
         </div>
       </div>
