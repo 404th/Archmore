@@ -5,7 +5,7 @@ import Home from './components/home/home'
 import Error from './components/error/error'
 import Gallery from './components/gallery/gallery'
 import SignIn from './components/signIn/signInPage'
-import SignUp from './components/signUps/signUpPage'
+import SignUp from './components/signUp/signUpPage'
 
 const Routes = () => {
 
