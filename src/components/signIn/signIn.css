@@ -1,0 +1,85 @@
+.signIn {
+  width: 100%;
+  min-height: 500px;
+  padding: 24px;
+  margin: 0;
+  background-color: lightpink;
+}
+
+.signIn_cover {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  background-color: lightskyblue;
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+}
+
+.signIn_cover_first, .signIn_cover_second {
+  background-color: lightgray;
+  box-sizing: border-box;
+  width: 50%;
+  height: 100%;
+  padding: 2%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.signIn_cover_first_child {
+  width: 100%;
+  height: 100%;
+  padding: 2%;
+  margin: 0;
+  background-color: lightsteelblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.signIn_cover_first_child form {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+
+}
+
+.signIn_form_username {
+  width: 100%;
+  height: 50%;
+}
+
+.signIn_cover_second_child {
+  width: 100%;
+  height: 100% !important;
+  background-color: lightskyblue;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
