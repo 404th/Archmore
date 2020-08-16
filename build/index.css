@@ -1,0 +1,26 @@
+/* FONTS */
+
+@font-face {
+  font-family: 'SU';
+  src: url('./font-families/sf-ui-display-thin-58646e9b26e8b.otf');
+  src: url('./font-families/sf-ui-display-bold-58646a511e3d9.otf');
+  src: url('./font-families/sf-ui-display-medium-58646be638f96.otf');
+}
+@font-face {
+  font-family: 'NY';
+  src: url('./font-families/NewYorkSmallBold.otf');
+  src: url('./font-families/NewYorkMediumBold.otf');
+  src: url('./font-families/NewYorkLargeBold.otf');
+  src: url('./font-families/NewYorkExtraLargeBold.otf');
+}
+
+
+body {
+  font-family: 'SU', Fallback, sans-serif;
+  font-weight: 300;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
