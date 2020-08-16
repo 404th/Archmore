@@ -4,8 +4,8 @@ import { Switch, Route } from 'react-router-dom'
 import Home from './components/home/home'
 import Error from './components/error/error'
 import Gallery from './components/gallery/gallery'
-import SignIn from './components/signIn/signIn'
-import SignUp from './components/signUp/signUp'
+import SignIn from './components/signIn/signInPage'
+import SignUp from './components/signUps/signUpPage'
 
 const Routes = () => {
 
